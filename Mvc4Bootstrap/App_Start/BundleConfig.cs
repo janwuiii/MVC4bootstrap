@@ -10,15 +10,16 @@ namespace MyTecBits_Bootstrap_MVC
         {
             bundles.IgnoreList.Clear();
 
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+            bundles.Add(new ScriptBundle("~/Bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrapjs").Include(
-                        "~/Scripts/bootstrap.min.js"));
+            bundles.Add(new ScriptBundle("~/Bundles/bootstrapjs").Include(
+                        "~/Scripts/bootstrap.js"));
 
-            bundles.Add(new StyleBundle("~/Content/bootstrapcss").Include(
-                        "~/Content/bootstrap.min.css",
-                        "~/Content/bootstrap-responsive.min.css"));
+            bundles.Add(new StyleBundle("~/Bundles/bootstrapcss").Include(
+                        "~/Content/bootstrap.css",
+                        "~/Content/bootstrap-theme.css",
+                        "~/Content/justified-nav.css"));
         }
     }
 }
